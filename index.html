@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <header>
+            <img src="logo.png" alt="Logo">
+            <h2 style=" font-size: 30px;">Students Grading System</h2>
+        </header>
+        <main>
+            <div id="top-section" class="section">
+                <h3 style="margin-top: 30px; font-size: 25px;">Enter Subject Marks</h3><br>
+                <div id="upper-form">
+                   <div style="margin-left: 0;" class="three-data">
+                    <label for="name">Student Name</label><br>
+                    <input style="height: 25px; width: 100%;" type="text" id="name">
+                   </div>
+                   <div class="three-data">
+                    <label for="name">Degree</label><br>
+                    <input  style="height: 25px; width: 100%;" type="text" id="class">
+                   </div>
+                   <div class="three-data">
+                    <label for="name">Section</label><br>
+                    <input style="height: 25px; width: 100%;" type="text" id="date">
+                   </div> 
+                </div>
+                <h4 style=" font-size: 25px;">Subject Marks</h4>
+                <div id="lower-form">
+                    <div class="six-data">
+                    <label for="Math">1:Math</label><br>
+                    <input type="number" id="Math">
+                   </div>
+                   <div class="six-data">
+                    <label for="Physics">2:Physics</label><br>
+                    <input   type="number" id="Physics">
+                   </div>
+                   <div class="six-data">
+                    <label for="English">3:English</label><br>
+                    <input  type="number" id="English">
+                   </div>
+                   <div class="six-data">
+                    <label for="urdu">4:urdu</label><br>
+                    <input  type="number" id="urdu">
+                   </div>
+                   <div class="six-data">
+                    <label for="Computer">5:Computer</label><br>
+                    <input  type="number" id="Computer">
+                   </div>
+                   <div class="six-data">
+                    <label for="Islamiat">6:Islamiat</label><br>
+                    <input  type="number" id="Islamiat">
+                   </div>
+                </div>
+                <div class="btn">
+                    <button onclick="resetform()" type="submit" id="btn-1">Reset</button>
+                    <button onclick="calculate()" type="submit" id="btn-2">Calculate</button>
+                </div>
+            </div>
+            <div id="bottom-section" class="section">
+                <h3 style="margin: 20px 30px 50px; font-size: 25px;">Student Result:</h3>
+                <div id="result-section">
+                    <div  class="result">
+                        <p>Total Marks:</p>
+                        <h2 id="total-marks">0/600</h2>
+                    </div>
+                    <div  class="result">
+                        <p>Percentage</p>
+                        <h2 id="Percentage">0%</h2>
+                    </div>
+                    <div  class="result">
+                        <p>Average</p>
+                        <h2 id="Average">0</h2>
+                    </div>
+                    <div  class="result">
+                        <p>Grade</p>
+                        <h2 id="Grade">N/A</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
